@@ -1,0 +1,1502 @@
+<!DOCTYPE HTML><html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Computer Science MS, PhD Programs | Michigan Technological University</title>
+      <meta name="Description" content="The combination of outstanding faculty and facilities will provide you the opportunity to become adept in your chosen area through research and studies.">
+      <meta name="Keywords" content="Computer Science masters, Computer Science doctorate, cs research, cluster computing, compiler, human-computer interaction">
+      
+
+
+<!-- <link type="text/css" rel="stylesheet" href="//www.mtu.edu/mtu_resources/styles/n/normalize.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" href="//www.mtu.edu/mtu_resources/styles/n/base.css" /> -->
+<link type="text/css" rel="stylesheet" href="//www.mtu.edu/mtu_resources/styles/n/base.css" />
+
+<!-- this is the headcode include -->
+<!--<link rel="stylesheet" href="/_resources/css/oustyles.css" />-->
+
+<link href="//www.mtu.edu/mtu_resources/styles/n/print.css" type="text/css" rel="stylesheet" media="print" />
+<script>/**
+ * +------------------------------------------------------------------------+
+ * | Global Settings                                                        |
+ * +------------------------------------------------------------------------+
+ */
+(function() {
+	// TODO: Fix if the user has switched their system preferences. 
+	// Only set cookie in settings page.	
+	function setFontSize(value) {
+		if (value) {
+			document.documentElement.classList.remove(window.mtuFontSize);
+			document.documentElement.classList.add(value);
+			window.mtuFontSize = value;
+		}
+	}
+
+	function setReducedMotion(value) {
+		if (value) {
+			document.documentElement.classList.add("reduce-animations");
+		} else {
+			document.documentElement.classList.remove("reduce-animations");
+		}
+	}
+
+	function setTheme(value) {
+		if (value) {
+			document.documentElement.classList.remove(window.mtuTheme);
+			document.documentElement.classList.add(value);
+			window.mtuTheme = value;
+		}
+	}
+	
+	const animQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+	const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+	let mtuAnimations;
+	let mtuFontSize;
+	let mtuTheme;
+
+	try {
+		mtuAnimations = localStorage.getItem("mtuAnimations");
+		mtuFontSize = localStorage.getItem("mtuFontSize");
+		mtuTheme = localStorage.getItem("mtuTheme");
+	} catch (error) {
+		console.error(error);
+		return;
+	}
+
+	setFontSize(mtuFontSize);
+	setReducedMotion(mtuAnimations === "reduced" || animQuery.matches);
+
+	if (mtuTheme === "system") {
+		mtuTheme = darkQuery.matches ? "dark" : "light";
+	}
+
+	if (mtuTheme === "dark") {
+		const link = document.createElement("link");
+		link.href = "/mtu_resources/assets/css/app-dark.css";
+		link.rel = "stylesheet";
+		link.type = "text/css";
+
+		document.head.append(link);
+	}
+
+	setTheme(mtuTheme);
+})();
+
+/**
+ * +------------------------------------------------------------------------+
+ * | Global Header and Navigation                                           |
+ * +------------------------------------------------------------------------+
+ */
+(function() {
+	function adjustNav() {
+		let navBar = document.querySelector('.nav-bar');
+		if (navBar) {
+			let navCount = navBar.querySelectorAll('.menu_item').length;
+			let height = navBar.clientHeight;	
+
+			if (height > 50) {
+			  navBar.style.setProperty('--navCount', navCount);
+			  navBar.classList.add('nav-tall');
+			} else {
+			  navBar.style.removeProperty('--navCount');
+			  navBar.classList.remove('nav-tall');
+			}	
+		}
+	}
+	
+	// Adjust header height right away.
+	adjustNav();
+	
+	// Re-adjust header height as content loads.
+	window.addEventListener("DOMContentLoaded", adjustNav);
+	window.addEventListener("load", adjustNav);
+	
+	// Setting up some space for items after the nav to be seen.
+	function onResize() {
+		let header = document.querySelector(".nav, .mtu-nav");
+		let headerHeight;
+		
+		if (header) {
+			headerHeight = header.clientHeight + "px";
+			document.documentElement.style.setProperty("--mtu-header-height", headerHeight);
+		}
+	}
+	
+	// Create --mtu-header-height now.
+	onResize();
+	
+	// Update --mtu-header-height on load.
+	window.addEventListener("DOMContentLoaded", onResize);
+	window.addEventListener("load", onResize);
+	
+	// Update --mtu-header-height on resize.
+	let frameId;
+	window.addEventListener("resize", function() {
+		// Debounce the resize event.
+		if (frameId) {
+			window.cancelAnimationFrame(frameId);
+		}
+		
+		frameId = window.requestAnimationFrame(onResize);
+	});
+})();
+
+/**
+ * Defers execution of the given function until after jQuery is loaded.
+ */
+function defer(fn) {
+	if (window.jsSet) {
+		fn();
+		return;
+	}
+	
+	setTimeout(function() {
+		defer(fn);
+	}, 100);
+}
+</script><meta property="mtu:ou_content_type" content="generic">
+      <meta property="mtu:ou_content_id" content="e5ff52bf-6de7-44d0-8c54-8732c1bbdcb3">
+      <meta property="og:title" content="Computer Science MS, PhD Programs | Michigan Technological University">
+      <meta property="og:description" content="The combination of outstanding faculty and facilities will provide you the opportunity to become adept in your chosen area through research and studies.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.mtu.edu/cs/graduate/computer-science/">
+      <meta property="og:site_name" content="Michigan Technological University">
+      <meta property="fb:pages" content="5652694310">
+      <meta property="og:image" content="https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg">
+      <meta property="og:image:alt" content="MS in Cybersecurity">
+      <meta property="og:image:height" content="540">
+      <meta property="og:image:width" content="1200">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@michigantech">
+      <meta name="twitter:creator" content="@michigantech">
+      <meta name="twitter:title" content="Computer Science MS, PhD Programs | Michigan Technological University">
+      <meta name="twitter:url" content="https://www.mtu.edu/cs/graduate/computer-science/">
+      <meta name="twitter:description" content="The combination of outstanding faculty and facilities will provide you the opportunity to become adept in your chosen area through research and studies.">
+      <meta name="twitter:image" content="https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg">
+      <meta name="twitter:image:alt" content="MS in Cybersecurity">
+      <meta itemprop="thumbnailUrl" name="thumbnail" content="https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg">
+      <link rel="preload" as="image" imagesrcset="https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner450.jpg 450w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner800.jpg 800w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg 1200w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1600.jpg 1600w, " imagesizes="(max-width: 1199px) 100vw, 1200px">
+      <link rel="canonical" href="https://www.mtu.edu/cs/graduate/computer-science/">
+      <script>
+window.dataLayer = window.dataLayer || [];
+if(window.devicePixelRatio > 1.5) {
+	dataLayer.push({'retina':'true'});
+} else {
+	dataLayer.push({'retina':'false'});
+}
+let theme = localStorage.getItem('mtuTheme') || 'light';
+let animations = localStorage.getItem('mtuAnimations') || 'no-preference';
+let fontSize = localStorage.getItem('mtuFontSize') || 'font-normal';
+
+dataLayer.push({'themes':theme,'animations':animations,'font_size':fontSize});
+dataLayer.push({'internalExternal' : 'external'});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://gtm-tagging-1.mtu.edu/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6W7S4L9');</script>
+<!-- End Google Tag Manager -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="preload" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" /></head>
+   <body>
+      <div aria-atomic="true" aria-live="polite" class="sr-only" id="sr-announcements" role="status"></div>
+      <div class="stick"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+
+<section aria-label="skip links">
+	<div class="skip-links" id="skip">
+		<a href="#main">Skip to page content</a>
+		<a href="#mtu-footer">Skip to footer navigation</a>
+	</div>
+</section>
+
+<header class="mtu-nav">
+    <div class="pre-nav-wrapper background-black">
+        <div class="pre-nav">
+            <button class="mobile-menu-button hide-for-desktop"
+                    data-inactive>
+                <span class="mobile-button-text">Menu</span>
+            </button>
+
+            <div class="pre-nav-logo">
+                <a class="pre-nav-logo-link" href="https://www.mtu.edu">
+                    <img alt="Michigan Tech Logo"
+                         class="pre-nav-logo-image"
+                         src="https://www.mtu.edu/mtu_resources/images/logos/michigan-tech-logo-full-yellow.svg"
+                         width="255"
+                         height="45" />
+                </a>
+            </div>
+
+            <div class="audience-search display-audience show-for-desktop">
+                <div class="audience-wrapper show-for-desktop">
+                    <ul aria-label="Audiences"
+                        class="audience-nav">
+                        <li class="menu_item">
+                                <a class="menu_link"
+                                   href="https://www.mtu.edu/current/">
+                                    Students
+                                </a>
+                            </li><li class="menu_item">
+                                <a class="menu_link"
+                                   href="https://www.mtu.edu/faculty-staff/">
+                                    Faculty/Staff
+                                </a>
+                            </li><li class="menu_item">
+                                <a class="menu_link"
+                                   href="https://www.mtu.edu/alumni/">
+                                    Alumni
+                                </a>
+                            </li><li class="menu_item">
+                                <a class="menu_link"
+                                   href="https://www.mtu.edu/parentsfamily/">
+                                    Parents
+                                </a>
+                            </li><li class="menu_item">
+                                <a class="menu_link"
+                                   href="https://www.mtu.edu/industry/">
+                                    Industry
+                                </a>
+                            </li> 
+
+                        <li class="menu_item tech-links">
+                            <div class="menu_link">
+                                Tech Links
+                            </div>
+
+                            <button aria-label="Open sub-menu"
+                                    class="submenu-button arrow"></button>
+
+                            <ul class="tech-links-menu menu_submenu">
+    <li class="submenu_item">
+        <a class="link-az" href="/a2z/index.html">
+            A to Z
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-directory" href="https://www.mtu.edu/directory/">
+            Campus Directory
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-canvas" href="https://mtu.instructure.com/">
+            Canvas
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-email" href="https://mail.google.com/a/mtu.edu/">
+            Email
+        </a>
+    </li>
+    
+    <li class="submenu_item">
+        <a class="link-mymt" href="https://www.mtu.edu/experience/">
+            Experience
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-sds" href="https://www.mtu.edu/sds/">
+            Safety Data Sheets
+        </a>
+    </li>
+	
+	<li class="submenu_item">
+		<a class="link-settings" href="/site-settings/index.html">
+			Website Settings
+		</a>
+	</li>
+</ul>
+                        </li>
+                    </ul>
+                </div>
+
+				<!-- Google Tag Manager (noscript) -->
+<noscript aria-hidden="true"><iframe src="https://gtm-tagging-1.mtu.edu/ns.html?id=GTM-K6W7S4L9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="desktop-search-bar search-bar show-for-desktop">
+		<form action="https://www.mtu.edu/search/" class="search-fields invisible">
+				<label for="desktop-search">
+					Search
+				</label>
+	
+			<input class="search-text"
+				id="desktop-search"
+				name="q"
+				type="search" />
+	
+			<button class="search-clear">
+				Clear Search Input
+			</button>
+	
+			<label for="search-options" hidden>
+				Search Category
+			</label>
+	
+			<select class="search-options" id="search-options">
+				<option value="mtu">
+					Michigan Tech
+				</option>
+				 
+				<option data-action="https://www.mtu.edu/cs/" data-name="s" value="site">
+					This Site
+				</option>
+								<option data-action="https://www.mtu.edu/majors/" value="programs">
+					Programs
+				</option>
+			</select>
+	
+			<button class="search-button" type="submit">
+				Go
+			</button>
+		</form>
+	
+		<button aria-expanded="false" class="search-toggle-button">
+			Open Search
+		</button>
+	</div>
+	            </div>
+        </div>
+    </div>
+
+   <nav class="nav-bar show-for-desktop">
+      <ul class="menu" aria-label="Main Navigation">
+      <li class="menu_item menu_has-submenu"><a href="/cs/undergraduate/" class="menu_link">Undergraduate</a><button class="submenu-button arrow" aria-expanded="false" aria-label="Undergraduate sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/computer-science/"><span>Computer Science BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/applied-computing/undergraduate/cybersecurity/"><span>Cybersecurity BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/data-science/undergraduate/"><span>Data Science BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/software/"><span>Software Engineering BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/general-computing/"><span>General Computing Program</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/minors/"><span>Computing Minors</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/accreditation/" aria-label="Computer Science Programs Accreditation"><span>Accreditation</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/advising/"><span>Advising</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/research-scholarship/"><span>Research Scholarship</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/enterprise/"><span>Enterprise</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/student-orgs/"><span>Student Orgs</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/cclc/"><span>Learning Center</span></a>
+</li></ul>
+</li><li class="menu_item menu_has-submenu"><a href="/cs/graduate/" class="menu_link">Graduate</a><button class="submenu-button arrow" aria-expanded="false" aria-label="Graduate sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/applied-computer-science/"><span>Applied Computer Science MS</span></a>
+</li><li class="submenu_item  active-in"><a class="submenu_link" href="/cs/graduate/computer-science/"><span>Computer Science MS, PhD</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cse/"><span>Computational Science &amp; Engineering PhD</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/cybersecurity/"><span>Cybersecurity MS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/data-science/"><span>Data Science MS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/accelerated/"><span>Accelerated Master's</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/cybersecurity-certificate/"><span>Foundations of Cybersecurity Certificate</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/program-directors/"><span>Program Directors</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="https://www.banweb.mtu.edu/pls/owa/stu_ctg_utils.p_online_all_courses_gr#CS"><span>CS Department Courses</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/awards/"><span>Graduate Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/graduate/dissertations/"><span>Theses and Dissertations</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/faqs/"><span>FAQs</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/timeline/"><span>Admission Timeline</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/employment/grad-student/"><span>Research Positions</span></a>
+</li></ul>
+</li><li class="menu_item menu_has-submenu"><div class="menu_link">Research</div><button class="submenu-button arrow" aria-expanded="false" aria-label="Research sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/research/projects/"><span>Active Projects</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/papers/"><span>Publications</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/artificial-intelligence-machine-learning/"><span>Artificial Intelligence and Machine Learning</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/architecture/"><span>Architecture</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/education-society-profession/"><span>Education, Society, and Profession</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/programming-software-engineering/"><span>Programming Languages and Software Engineering</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/security-privacy/"><span>Security and Privacy</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/systems-networking/"><span>Systems and Networking</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/icc/"><span>Institute of Computing and Cybersystems</span></a>
+</li></ul>
+</li><li class="menu_item"><a href="/computing/about/college/facilities/" class="menu_link">Facilities</a>
+</li><li class="menu_item menu_has-submenu"><div class="menu_link">Department</div><button class="submenu-button arrow" aria-expanded="false" aria-label="Department sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/department/about/"><span>About</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/history/"><span>50th Anniversary</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/annual-highlights/"><span>Annual Highlights</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/people/"><span>Faculty Directory</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/people/staff/"><span>Department Staff</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/advisory-board/"><span>External Advisory Board</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/alumni/"><span>Alumni</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/student-awards/"><span>Student Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/faculty-awards/"><span>Faculty Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/employment/"><span>Employment</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/contact/"><span>Contact Us</span></a>
+</li></ul>
+</li><li class="menu_item"><a href="/cs/giving/" class="menu_link">Giving Opportunities</a>
+</li><li class="menu_item menu_item-yellow"><a href="/apply/" class="menu_link">Apply Now</a>
+</li>      </ul>
+   </nav>
+
+    <nav class="offscreen-nav invisible">
+      <div class="mobile-search-bar search-bar">
+	<form action="https://www.mtu.edu/search/">
+		<label for="mobile-search"
+			   hidden>
+			Search
+		</label>
+
+		<input class="search-text"
+			   id="mobile-search"
+			   name="q"
+			   placeholder="Search"
+			   type="search" />
+
+		<button class="search-clear">
+			Clear Search Input
+		</button>
+
+		<label for="mobile-search-options"
+			   hidden>
+			Search Category
+		</label>
+
+		<select class="search-options"
+				id="mobile-search-options">
+			<option value="mtu">
+				Michigan Tech
+			</option>
+
+			 
+			<option data-action="https://www.mtu.edu/cs/" data-name="s" value="site">
+				This Site
+			</option>
+			
+			<option data-action="https://www.mtu.edu/majors"
+					value="programs">
+				Programs
+			</option>
+		</select>
+
+		<button class="search-button"
+				type="submit">
+			Search
+		</button>
+	</form>
+</div>
+        
+
+        <ul class="menu"
+            aria-label="Main Navigation">
+
+           
+            <li class="menu_item menu_has-submenu"><a href="/cs/undergraduate/" class="menu_link">Undergraduate</a><button class="submenu-button arrow" aria-expanded="false" aria-label="Undergraduate sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/computer-science/"><span>Computer Science BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/applied-computing/undergraduate/cybersecurity/"><span>Cybersecurity BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/data-science/undergraduate/"><span>Data Science BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/software/"><span>Software Engineering BS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/general-computing/"><span>General Computing Program</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/minors/"><span>Computing Minors</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/accreditation/" aria-label="Computer Science Programs Accreditation"><span>Accreditation</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/advising/"><span>Advising</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/research-scholarship/"><span>Research Scholarship</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/undergraduate/enterprise/"><span>Enterprise</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/student-orgs/"><span>Student Orgs</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/undergraduate/cclc/"><span>Learning Center</span></a>
+</li></ul>
+</li><li class="menu_item menu_has-submenu"><a href="/cs/graduate/" class="menu_link">Graduate</a><button class="submenu-button arrow" aria-expanded="false" aria-label="Graduate sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/applied-computer-science/"><span>Applied Computer Science MS</span></a>
+</li><li class="submenu_item  active-in"><a class="submenu_link" href="/cs/graduate/computer-science/"><span>Computer Science MS, PhD</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cse/"><span>Computational Science &amp; Engineering PhD</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/cybersecurity/"><span>Cybersecurity MS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/data-science/"><span>Data Science MS</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/accelerated/"><span>Accelerated Master's</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/cybersecurity-certificate/"><span>Foundations of Cybersecurity Certificate</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/program-directors/"><span>Program Directors</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="https://www.banweb.mtu.edu/pls/owa/stu_ctg_utils.p_online_all_courses_gr#CS"><span>CS Department Courses</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/awards/"><span>Graduate Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/computing/graduate/dissertations/"><span>Theses and Dissertations</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/faqs/"><span>FAQs</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/graduate/timeline/"><span>Admission Timeline</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/employment/grad-student/"><span>Research Positions</span></a>
+</li></ul>
+</li><li class="menu_item menu_has-submenu"><div class="menu_link">Research</div><button class="submenu-button arrow" aria-expanded="false" aria-label="Research sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/research/projects/"><span>Active Projects</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/papers/"><span>Publications</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/artificial-intelligence-machine-learning/"><span>Artificial Intelligence and Machine Learning</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/architecture/"><span>Architecture</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/education-society-profession/"><span>Education, Society, and Profession</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/programming-software-engineering/"><span>Programming Languages and Software Engineering</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/security-privacy/"><span>Security and Privacy</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/research/systems-networking/"><span>Systems and Networking</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/icc/"><span>Institute of Computing and Cybersystems</span></a>
+</li></ul>
+</li><li class="menu_item"><a href="/computing/about/college/facilities/" class="menu_link">Facilities</a>
+</li><li class="menu_item menu_has-submenu"><div class="menu_link">Department</div><button class="submenu-button arrow" aria-expanded="false" aria-label="Department sub-menu"></button>
+<ul class="menu_submenu"><li class="submenu_item"><a class="submenu_link" href="/cs/department/about/"><span>About</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/history/"><span>50th Anniversary</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/annual-highlights/"><span>Annual Highlights</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/people/"><span>Faculty Directory</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/people/staff/"><span>Department Staff</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/advisory-board/"><span>External Advisory Board</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/alumni/"><span>Alumni</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/student-awards/"><span>Student Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/faculty-awards/"><span>Faculty Awards</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/employment/"><span>Employment</span></a>
+</li><li class="submenu_item"><a class="submenu_link" href="/cs/department/contact/"><span>Contact Us</span></a>
+</li></ul>
+</li><li class="menu_item"><a href="/cs/giving/" class="menu_link">Giving Opportunities</a>
+</li><li class="menu_item menu_item-yellow"><a href="/apply/" class="menu_link">Apply Now</a>
+</li>    
+            <li class="menu_item menu_has-submenu menu_item-black">
+                <div class="menu_link">
+                    Info For . . .
+                </div>
+
+                <button aria-label="Open sub-menu"
+                        class="submenu-button arrow"></button>
+
+                <ul class="tech-links-menu menu_submenu">
+                    <li class="submenu_item">
+                            <a class="link-az"
+                               href="https://www.mtu.edu/current/">
+                                Students
+                            </a>
+                        </li><li class="submenu_item">
+                            <a class="link-az"
+                               href="https://www.mtu.edu/faculty-staff/">
+                                Faculty/Staff
+                            </a>
+                        </li><li class="submenu_item">
+                            <a class="link-az"
+                               href="https://www.mtu.edu/alumni/">
+                                Alumni
+                            </a>
+                        </li><li class="submenu_item">
+                            <a class="link-az"
+                               href="https://www.mtu.edu/parentsfamily/">
+                                Parents
+                            </a>
+                        </li><li class="submenu_item">
+                            <a class="link-az"
+                               href="https://www.mtu.edu/industry/">
+                                Industry
+                            </a>
+                        </li> 
+                </ul>
+            </li>
+
+            <li class="menu_item menu_has-submenu menu_item-black">
+                <div class="menu_link">
+                    Tech Links
+                </div>
+
+                <button aria-label="Open sub-menu"
+                        class="submenu-button arrow"></button>
+
+                <ul class="tech-links-menu menu_submenu">
+    <li class="submenu_item">
+        <a class="link-az" href="/a2z/index.html">
+            A to Z
+        </a>
+    </li>
+	
+	<li class="submenu_item">
+        <a class="link-directory" href="https://www.mtu.edu/directory/">
+            Campus Directory
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-canvas" href="https://mtu.instructure.com/">
+            Canvas
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-email" href="https://mail.google.com/a/mtu.edu/">
+            Email
+        </a>
+    </li>
+    
+    <li class="submenu_item">
+        <a class="link-mymt" href="https://www.mtu.edu/experience/">
+            Experience
+        </a>
+    </li>
+
+    <li class="submenu_item">
+        <a class="link-sds" href="https://www.mtu.edu/sds/">
+            Safety Data Sheets
+        </a>
+    </li>
+	
+	<li class="submenu_item">
+		<a class="link-settings" href="/site-settings/index.html">
+			Website Settings
+		</a>
+	</li>
+</ul>
+            </li>
+        </ul>
+    </nav>
+</header>         <section class="background-light-gray" aria-label="Site Title">
+            <div class="site-title-wrapper">
+               <div class="site-title">
+                  <div class="title"><span><a href="/cs/">Computer Science</a></span></div>
+                  <div id="breadcrumbs" role="navigation" aria-label="breadcrumbs" class="breadcrumbs">
+                     <ul>
+                        <li><a href="/">Michigan Tech</a></li>
+                        <li><a href="/computing/index.html">Computing</a></li>
+                        <li><a href="/cs/">Computer Science</a></li>
+                        <li><a href="/cs/graduate/">Graduate</a></li>
+                        <li class="active" aria-current="page">Computer Science MS, PhD</li>
+                     </ul>
+                  </div>
+               </div>
+               </div>
+         </section>
+         <div id="main" role="main" class="main">
+            <section id="body_section" class="body-section" aria-label="main content">
+               <div class="full-width">
+                  <div class="clearer"></div>
+                  <div id="banner_image">
+                     <div class="multi-media_wrapper multi-media_wrapper-image-only multi-media_wrapper-feature"><img src="/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg" alt="MS in Cybersecurity" height="540" width="1200" srcset="https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner450.jpg 450w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner800.jpg 800w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1200.jpg 1200w, https://www.mtu.edu/cs/graduate/computer-science/images/cybersecurity-awareness2-6x4-banner1600.jpg 1600w, " sizes="(max-width: 1199px) 100vw, 1200px" class="multi-media_img"></div>
+                  </div>
+                  <div class="left leftnav">
+                     <div id="toggle-left"><img class="more-menu left" height="16" width="20" aria-hidden="true" role="presentation" src="/_resources/images/icons/hamburger.svg" alt="Open"><button class="left not-button"> Also in this section</button></div>
+                     <nav aria-label="left side navigtion bar">
+                        <ul id="main_links">
+                           <li class="nav-title active"><a class="nav-title-heading" href="/cs/graduate/">Graduate</a><div class="sublinks">
+                                 <ul class="firstlevel"><li><a  href="/cs/graduate/applied-computer-science/">Applied Computer Science MS</a></li><li class="active"><a  href="/cs/graduate/computer-science/">Computer Science MS, PhD</a><ul class="secondlevel"><li><a href="/cs/graduate/computer-science/cs-handbook/">Graduate Handbook</a></li><li><a href="/cs/graduate/computer-science/degree-plans/">Degree Plans</a></li><li><a href="/cs/graduate/computer-science/ms-advising/">MS Advising</a></li><li><a href="/cs/graduate/computer-science/phd-advising/">PhD Advising</a></li><li><a href="/cs/graduate/computer-science/directory/">Graduate Directory</a></li><li><a href="/cs/graduate/accelerated/">Accelerated MS</a></li><li><a href="/cs/graduate/awards/">Graduate Awards</a></li></ul></li><li><a  href="/cse/">Computational Science &amp; Engineering PhD</a></li><li><a  href="/cs/graduate/cybersecurity/">Cybersecurity MS</a></li><li><a  href="/data-science/">Data Science MS</a></li><li><a  href="/cs/graduate/accelerated/">Accelerated Master's</a></li><li><a  href="/cs/graduate/cybersecurity-certificate/">Foundations of Cybersecurity Certificate</a></li><li><a  href="/cs/graduate/program-directors/">Program Directors</a></li><li><a  href="https://www.banweb.mtu.edu/pls/owa/stu_ctg_utils.p_online_all_courses_gr#CS">CS Department Courses</a></li><li><a  href="/cs/graduate/awards/">Graduate Awards</a></li><li><a  href="/computing/graduate/dissertations/">Theses and Dissertations</a></li><li><a  href="/cs/graduate/faqs/">FAQs</a></li><li><a  href="/cs/graduate/timeline/">Admission Timeline</a></li><li><a  href="/cs/department/employment/grad-student/">Research Positions</a></li></ul>
+                              </div>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <h1 class="pagetitle">Computer Science—MS, PhD</h1>
+                  <div id="content" class="content rsidebar">
+                     <article id="content_body" aria-label="content" class="main-content">
+                        <h2>Prepare for an Advanced Career in Computer Science</h2>
+                        
+                        <p>Graduate programs in the Michigan Tech Department of Computer Science pave the way
+                           to exciting, well-compensated career opportunities. You'll be well-prepared through
+                           Michigan Tech's high-quality educational experience, which blends fundamentals, cutting-edge
+                           technologies, and innovative research.</p>
+                        
+                        <p>Computer Science faculty and students apply computational approaches to solve significant
+                           hardware, software, and data problems across a wide range of disciplines. Students
+                           have many rich opportunities to conduct leading-edge research in a friendly, collegial
+                           atmosphere. You will find us working on research in <a href="/computing/ai/index.html">artificial intelligence</a>, machine learning, data science, big data, internet of things, biometrics, computer
+                           and network security, human-computer interaction, and more.</p>
+                        
+                        <p>Our students and graduates are in high demand by state, national, and international
+                           companies. And our alumni are active throughout the nation and worldwide, developing
+                           innovative technologies and solving hard multidisciplinary problems.&nbsp;</p>
+                        
+                        <p>Are you ready for the future? We are. Join us!</p>
+                        
+                        <h2>What Sets Us Apart</h2>
+                        
+                        <ul>
+                           
+                           <li>Four&nbsp;faculty members and an alumnus have received prestigious NSF CAREER Awards.</li>
+                           
+                           <li>Alumni&nbsp;hold&nbsp;faculty positions at the Missouri University of Science and Technology,
+                              University of Houston, and University of Rochester, among others.</li>
+                           
+                           <li>Our graduates are employed in a range of industries, including&nbsp;Amazon, AMD, Ford,
+                              Google, Microsoft, Netflix, Intel, Qualcomm, Raytheon, Texas Instruments, and more.</li>
+                           
+                           <li>Graduate students have received the NSF Graduate Research Fellowship Award, the King-Chavez-Parks
+                              Future Faculty Fellowship, the Google Anita Borg Scholarship, and a NASA-Harriet G.
+                              Jenkins Predoctoral Fellowship Award</li>
+                           
+                           <li>Research projects in compilers, computer architecture, computer science education,
+                              and parallel computing have each received funding of over $1 million.</li>
+                           
+                           <li>Special-Purpose Research and Learning Labs
+                              
+                              <ul>
+                                 
+                                 <li>Artificial intelligence/robotics lab</li>
+                                 
+                                 <li>Cluster computing lab</li>
+                                 
+                                 <li>Compiler/architecture lab</li>
+                                 
+                                 <li>Graphics and Visualization lab</li>
+                                 
+                                 <li>Human-computer interaction lab</li>
+                                 
+                                 <li>Virtual Reality Lab</li>
+                                 
+                                 <li>Operating Systems/Security and Privacy</li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        
+                        <h2>MS Degree Plans</h2>
+                        
+                        <div class="sliders">
+                           <div class="slider" tabindex="0" aria-expanded="false" id="slider-d12e215" role="button">
+                              <div class="bar accordion-title">
+                                 <div class="h2">MS, Computer Science: Thesis Option</div>
+                              </div>
+                              <div class="slider-content accordion">
+                                 <div class="item">
+                                    <p>This option requires a research thesis prepared under the supervision of the advisor.
+                                       The thesis describes a research investigation and its results. The scope of the research
+                                       topic for the thesis should be defined in such a way that a full-time student could
+                                       complete the requirements for a master’s degree in 12 months or three semesters following
+                                       the completion of coursework by regularly scheduling graduate research credits.</p>
+                                    
+                                    <p>The minimum requirements are as follows:</p>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Total Credit Requirements</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Option Parts</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Coursework (minimum)</th>
+                                             
+                                             <td>20 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Thesis research</th>
+                                             
+                                             <td>6-10 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Total (minimum)</th>
+                                             
+                                             <td>30 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Distribution of Coursework Credit</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Distribution</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">5000-6000 series (minimum)</th>
+                                             
+                                             <td>12 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">3000-4000 (maximum)</th>
+                                             
+                                             <td>12 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <p>Programs may have stricter requirements and may require more than the minimum number
+                                       of credits listed here.</p>
+                                    
+                                    <p>The CS Department allows up to 6 of the 30 hours of credit required for graduation
+                                       to be in CS5990. In addition to completing the 30 hours of credit in approved courses
+                                       (including CS5990 and up to 3 hours of CS5999 credit though not more than 9 total
+                                       hours may be taken in CS5990 and CS5999), a student following the thesis option is
+                                       expected to:</p>
+                                    
+                                    <ul>
+                                       
+                                       <li>Prepare a written plan describing the thesis research.</li>
+                                       
+                                       <li>Defend the research plan in an oral seminar presentation or meet with the advisory
+                                          committee to discuss the research plan.</li>
+                                       
+                                       <li>Prepare a final thesis.</li>
+                                       
+                                       <li>Defend the thesis in an oral seminar presentation.</li>
+                                       
+                                       <li>Learn more about the <a href="/gradschool/policies-procedures/requirements/ms/index.html">Thesis Option</a></li>
+                                       </ul>
+                                    </div>
+                              </div>
+                           </div>
+                           <div class="slider" tabindex="0" aria-expanded="false" id="slider-d12e319" role="button">
+                              <div class="bar accordion-title">
+                                 <div class="h2">MS, Computer Science: Project Option</div>
+                              </div>
+                              <div class="slider-content accordion">
+                                 <div class="item">
+                                    <p>This option requires a report describing the results of an independent study project.
+                                       The scope of the research topic should be defined in such a way that a full-time student
+                                       could complete the requirements for a master’s degree in twelve months or three semesters
+                                       following the completion of coursework by regularly scheduling graduate research credits.&nbsp;</p>
+                                    
+                                    <p>Of the minimum total of 30 credits, at least 24 must be earned in coursework other
+                                       than the project:</p>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Total Credit Requirements</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Option Parts</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Coursework (minimum)</th>
+                                             
+                                             <td>24 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Report</th>
+                                             
+                                             <td>2-6 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">Total (minimum)</th>
+                                             
+                                             <td>30 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Distribution of Coursework Credit</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Distribution</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">5000-6000 series (minimum)</th>
+                                             
+                                             <td>12 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">3000-4000 (maximum)</th>
+                                             
+                                             <td>12 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <p>Programs may have stricter requirements and may require more than the minimum number
+                                       of credits listed here.</p>
+                                    
+                                    <p>The project option allows up to&nbsp;6 of the 30 hours of credit required for graduation
+                                       to be in CS5990. In addition to completing the 30 hours of credit in approved courses
+                                       (including CS5990 and up to 3 hours of CS5999 credit), a student following the project
+                                       option is expected to: present written and oral project reports at the conclusion
+                                       of the project. Thus, the student should:</p>
+                                    
+                                    <ul>
+                                       
+                                       <li>Prepare a written project plan that describes any background work necessary for completion
+                                          of the project.</li>
+                                       
+                                       <li>Present the project plan to the advisory committee.</li>
+                                       
+                                       <li>Prepare a final report at the conclusion of the project.</li>
+                                       
+                                       <li>Defend the project report in a public oral seminar presentation.</li>
+                                       
+                                       <li>Learn more about the <a href="/gradschool/policies-procedures/requirements/ms/index.html">Project Option</a>.</li>
+                                       </ul>
+                                    </div>
+                              </div>
+                           </div>
+                           <div class="slider" tabindex="0" aria-expanded="false" id="slider-d12e424" role="button">
+                              <div class="bar accordion-title">
+                                 <div class="h2">MS, Computer Science: Coursework Option</div>
+                              </div>
+                              <div class="slider-content accordion">
+                                 <div class="item">
+                                    <p>This option requires a minimum of 30 credits be earned through coursework. A limited
+                                       number of research credits may be used with the approval of the advisor, department,
+                                       and Graduate School. See <a href="/gradschool/policies-procedures/requirements/ms/index.html">degree requirements</a> for more information.</p>
+                                    
+                                    <p>A graduate program may require an oral or written examination before conferring the
+                                       degree and may require more than the minimum credits listed here:</p>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Distribution of Coursework Credit</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Distribution</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">5000-6000 series (minimum)</th>
+                                             
+                                             <td>18 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">3000-4000 (maximum)</th>
+                                             
+                                             <td>12 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <ul>
+                                       
+                                       <li>The coursework option requires 30 hours of graded course work.</li>
+                                       
+                                       <li>None of the 30 hours of credit required for graduation may be in <a href="https://www.banweb.mtu.edu/pls/owa/studev.stu_ctg_utils.p_display_class_facbio?ps_department=CS&amp;PS_STYLE_DEPT=cs&amp;ps_level=5000&amp;ps_faculty=all#cs5990">CS5990</a> and no more than 3 hours of <a href="https://www.banweb.mtu.edu/pls/owa/studev.stu_ctg_utils.p_display_class_facbio?ps_department=CS&amp;PS_STYLE_DEPT=cs&amp;ps_level=5000&amp;ps_faculty=all#cs5999">CS5999</a> credit may be applied to the 30-hour requirement.</li>
+                                       
+                                       <li>Course work option students have the graduate director as their advisor.</li>
+                                       
+                                       <li>Learn more about the <a href="/gradschool/policies-procedures/requirements/ms/index.html">Coursework Option</a>.</li>
+                                       </ul>
+                                    </div>
+                              </div>
+                           </div>
+                           <div class="slider" tabindex="0" aria-expanded="false" id="slider-d12e493" role="button">
+                              <div class="bar accordion-title">
+                                 <div class="h2">Accelerated Master's, Computer Science</div>
+                              </div>
+                              <div class="slider-content accordion">
+                                 <div class="item">
+                                    <p>
+                                       
+                                       <ul>
+                                          
+                                          <li>Undergraduate students can complete both their bachelor's and master's degrees on
+                                             an <a href="/cs/graduate/accelerated/index.html">accelerated timeline</a>.</li>
+                                          </ul>
+                                       </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <h2>PhD Degree Plan</h2>
+                        
+                        <div class="sliders">
+                           <div class="slider" tabindex="0" aria-expanded="false" id="slider-d3449aec" role="button">
+                              <div class="bar accordion-title">
+                                 <div class="h2">PhD Requirements: Computer Science</div>
+                              </div>
+                              <div class="slider-content accordion">
+                                 <div class="item">
+                                    <p>To complete a doctoral degree, students must complete the following milestones:</p>
+                                    
+                                    <ul>
+                                       
+                                       <li>Complete all coursework and research credits (see credit requirements below)</li>
+                                       
+                                       <li>Pass Qualifying Examination</li>
+                                       
+                                       <li>Pass Research Proposal Examination</li>
+                                       
+                                       <li>Prepare and Submit Approved Dissertation</li>
+                                       
+                                       <li>Pass Final Oral Defense</li>
+                                       </ul>
+                                    
+                                    <p>The minimum credit requirements are as follows:</p>
+                                    
+                                    <table class="auto striped" style="min-width: 100%;">
+                                       <caption>Total Credit Requirements</caption>
+                                       
+                                       <tbody>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="col">Degrees</th>
+                                             
+                                             <th scope="col">Credits</th>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">MS-PhD (minimum)</th>
+                                             
+                                             <td>30 Credits</td>
+                                             </tr>
+                                          
+                                          <tr>
+                                             
+                                             <th scope="row">BS-PhD (minimum)</th>
+                                             
+                                             <td>60 Credits</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    
+                                    <p>Individual programs may have higher standards and students are expected to know their
+                                       program's requirements. See the&nbsp;<a href="/gradschool/policies-procedures/requirements/phd/index.html">Doctor of Philosophy Requirements</a>&nbsp;website for more information about PhD milestones and related timelines.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <p>The PhD student must complete:</p>
+                        
+                        <ul>
+                           
+                           <li>An approved MS program in computer science,</li>
+                           
+                           <li>A PhD credit requirement, and</li>
+                           
+                           <li>A graduate-level breadth requirement.</li>
+                           
+                           <li><a href="/gradschool/policies-procedures/requirements/phd/index.html">Learn more about PhD degree plans</a>.</li>
+                           </ul>
+                        
+                        <h2>Funding Opportunities</h2>
+                        
+                        <p>Many University-related and external funding options are available to graduate students.
+                           Accepted PhD students are automatically considered for Graduate Teaching Assistantships.
+                           Check out available CS department <a href="/cs/department/employment/grad-student/index.html">Graduate Research positions</a>. In addition, find an extensive list of resources to aid students in finding <a href="/gradschool/financial/index.html">additional funding</a>&nbsp;on the Michigan Tech Graduate School website.</p>
+                        
+                        <div class="testimonial">
+                           <div class="testimonial__quote-wrapper">
+                              <blockquote class="testimonial__quote">
+                                 <div class="testimonial__title"></div>
+                                 <td class="ou-testimonial-quote">
+                                    
+                                    <p>I chose MTU for my graduate degree because of the great relationships I made with
+                                       the professors in my undergrad. People actually care about you at MTU and you are
+                                       not just a number. The welcoming environment at Computing[MTU] brings with it opportunities
+                                       and a bright future.</p>
+                                    </td>
+                              </blockquote>
+                              <div class="testimonial__info"><img class="testimonial__photo" loading="lazy" src="/cs/graduate/computer-science/images/elija-cobb-meme-square170.jpg" alt="Elija Cobb" width="170" height="170" role="presentation"><div class="testimonial__author"><cite class="testimonial__author__name">Elijah Cobb</cite><div class="testimonial__author__title">PhD Student, Computer Science</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="boxed-section one">
+                           <div>
+                              <div class="item full-column">
+                                 <div class="top-title">
+                                    <h2>Grad School Calendar</h2>
+                                    <div></div>
+                                 </div>
+                                 <div class="events feed-import" id="rss-28b320ca" data-href="//www.mtu.edu/mtu_resources/events-n.php?url=https%3A%2F%2Fwww.mtu.edu%2Fmtu_resources%2Fphp%2Fnews%2Frss%2F%3Finclude%3Dgraduate%2520school&amp;limit=6"></div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <ul class="list-spread three">
+                           <li><a class="button" href="/gradschool/prospective/request-information/index.html?sys:field:gr_degree_type=be16d64b-3929-4c2f-9fb5-af5a5dfe8d01&amp;sys:field:gr_program=5cc9493f-f134-4cdb-a1b2-80b382325184">Request Master’s Info</a></li>
+                           <li><a class="button" href="/gradschool/prospective/request-information/index.html?sys:field:gr_degree_type=5223014b-7379-440b-b648-187805089025&amp;sys:field:gr_program=5cc9493f-f134-4cdb-a1b2-80b382325184">Request PhD Info</a></li>
+                           <li><a class="button" href="/gradschool/prospective/apply-now/index.html">How to Apply</a></li>
+                        </ul>
+                        
+                        <div class="clearer"></div>
+                     </article>
+                  </div>
+                  <div class="right-sidebar">
+                     <aside aria-label="sidebar content">
+                        <div class="show-for-desktop">
+                           
+                           <div class="sidebar-nobox">
+                              <div class="sidebar-content">
+                                 <div class="callout">
+                                    
+                                    <p><a class="button" href="/gradschool/prospective/request-information/index.html?sys:field:gr_degree_type=be16d64b-3929-4c2f-9fb5-af5a5dfe8d01&amp;sys:field:gr_program=5cc9493f-f134-4cdb-a1b2-80b382325184">Request Master’s Info</a></p>
+                                    
+                                    <p><a class="button" href="/gradschool/prospective/request-information/index.html?sys:field:gr_degree_type=5223014b-7379-440b-b648-187805089025&amp;sys:field:gr_program=5cc9493f-f134-4cdb-a1b2-80b382325184">Request PhD Info</a></p>
+                                    
+                                    <p><a class="button" href="/gradschool/prospective/apply-now/index.html">How to Apply</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                           
+                           </div>
+                        
+                        <div class="sidebar-nobox">
+                           <div class="sidebar-content">
+                              <div class="callout">
+                                 
+                                 <p><a class="button-black" href="/cs/what/index.html">What is Computer Science?</a></p>
+                                 
+                                 <p><a class="button-black" title="Computing Salaries Comparison" href="/computing/salaries/index.html">Computer Salaries Comparison</a></p>
+                                 </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="sidebar">
+                           <div class="sidebar-title">
+                              <h2>Contact</h2>
+                           </div>
+                           <div class="sidebar-content">
+                              <div>
+                                 <p>Graduate Program Director:</p>
+                              </div>
+                              <div>
+                                 <td>
+                                    <p><a href="mailto:cs.grad.info@mtu.edu">Jean Mayo</a></p>
+                                 </td>
+                              </div><br><div>
+                                 <p>Graduate Program Assistant:</p>
+                              </div>
+                              <div>
+                                 <td>
+                                    <p><a href="mailto:cs.grad.info@mtu.edu">Janna Chittick</a></p>
+                                 </td>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        
+                        <div class="sidebar">
+                           <div class="sidebar-title">
+                              <h2>Admissions Requirements</h2>
+                           </div>
+                           <div class="sidebar-content">
+                              <p><em>Applications are reviewed on an individual basis using a holistic approach.</em></p>
+                              
+                              <h3>Graduate School</h3>
+                              
+                              <ul>
+                                 
+                                 <li><a href="/gradschool/prospective/apply-now/requirements/index.html">Application Requirements</a></li>
+                                 
+                                 <li><a href="/gradschool/prospective/apply-now/options/index.html">Admissions Types</a></li>
+                                 
+                                 <li><a href="https://go.mtu.edu/apply/">Graduate Application</a></li>
+                                 
+                                 <li><a href="/gradschool/prospective/apply-now/requirements/index.html#slider-92633">Student Statements</a></li>
+                                 
+                                 <li><a href="/gradschool/prospective/apply-now/requirements/index.html#slider-92634">Official Transcripts</a></li>
+                                 </ul>
+                              <h3>Program Specific</h3>
+                              
+                              <ul>
+                                 
+                                 <li><a href="/gradschool/prospective/apply-now/requirements/index.html#slider-92636">2 Letters of Recommendation</a>&nbsp;</li>
+                                 
+                                 <li>Admitted applicants typically have an undergraduate overall GPA of 3.0 or greater
+                                    on a 4.0 scale</li>
+                                 
+                                 <li>GRE (<em>for International Students only, </em><em>waived for PhD if undergraduate degree is from a U.S. institution)</em></li>
+                                 
+                                 <li>4-year Bachelor's degree required - Must have a degree in Computer Science or a similar
+                                    field. Students with degrees in other fields may be required to take preparatory courses.</li>
+                                 </ul>
+                              
+                              <h3>International Students</h3>
+                              
+                              <ul>
+                                 
+                                 <li>TOEFL: Recommended Score of at least 90 iBT</li>
+                                 
+                                 <li>IELTS: Recommended Score of 6.5 overall</li>
+                                 </ul>
+                              
+                              <p>Michigan Tech <strong>requires a minimum</strong> 79 overall TOEFL or 6.5 overall IELTS score.</p>
+                              
+                              <h3>Admissions Decisions</h3>
+                              
+                              <p>Made beginning on January 1 (for Fall) and October 1 (for Spring)</p>
+                              
+                              <h3>Recommended Deadlines</h3>
+                              
+                              <p>Fall Semester: April 1</p>
+                              
+                              <p>Spring Semester: August 1</p>
+                              
+                              <p>Summer: Please contact the Graduate Program Director&nbsp;</p>
+                              
+                              <p><em>For full financial consideration for Fall: February 1</em></p>
+                           </div>
+                        </div>
+                        </aside>
+                     <div class="clearer"></div>
+                  </div>
+                  <div class="clearer"></div>
+               </div>
+               <div class="full-width">
+                  <div class="content-continued main-content">
+                     <article aria-label="additional content">
+                        
+                        <div class="top-title">
+                           <h2>Meet Your Faculty&nbsp;</h2>
+                        </div>
+                        
+                        <div class="boxed-section three ">
+                           <div>
+                              <div class="item full-column">
+                                 
+                                 <div class="movie-wrapper preview"><!-- FROM CACHE resets at Tue, 20 May 2025 11:52:16-->
+<a class="various fancybox.iframe yt-embed" href="https://www.youtube.com/embed/-anfk1lcy_o?autoplay=true&amp;rel=0&amp;showinfo=1&amp;enablejsapi=1&amp;origin=https://www.mtu.edu" rel="noopener" target="_blank"><div class="yt-iframe" id="yt--anfk1lcy_o" data-yt="-anfk1lcy_o"><div class="movie new-movie yt-iframe" style="width: px;height:auto;">
+			<div class="show-for-sr">Watch Dr. Laura Brown video</div>
+			<img loading="lazy" src="https://i.ytimg.com/vi/-anfk1lcy_o/maxresdefault.jpg" height="720" width="1280" role="presentation" alt="Preview image for Dr. Laura Brown video" />
+			<button class="playhead" aria-hidden="true" tabindex="-1" aria-label="Watch Dr. Laura Brown">
+			<svg xmlns="http://www.w3.org/2000/svg" height="155" width="120" stroke="#000" fill="#fff" stroke-width="0" viewBox="0 -10 120 155" role="presentation">
+				<polygon points="25,0 100,40 25,80"></polygon>
+				<text x="10" y="140" fill="#000" stroke="none" style="font-size: 34px; font-family: 'Open Sans', Arial, sans-serif; font-weight:600;">Watch</text>
+			</svg>
+			</button>
+		</div></div></a>                                    <div class="movie-title">
+                                       <h2>Dr. Laura Brown</h2><button><span class="show-for-sr">Expand</span></button></div>
+                                    <div class="movie-description"></div>
+                                 </div>
+                                 
+                                 &nbsp;</div>
+                              <div class="item full-column">
+                                 
+                                 <div class="movie-wrapper preview"><!-- FROM CACHE resets at Tue, 20 May 2025 11:52:17-->
+<a class="various fancybox.iframe yt-embed" href="https://www.youtube.com/embed/KG2SNBFy9_U?autoplay=true&amp;rel=0&amp;showinfo=1&amp;enablejsapi=1&amp;origin=https://www.mtu.edu" rel="noopener" target="_blank"><div class="yt-iframe" id="yt-KG2SNBFy9_U" data-yt="KG2SNBFy9_U"><div class="movie new-movie yt-iframe" style="width: px;height:auto;">
+			<div class="show-for-sr">Watch Dr. Keith Vertanen video</div>
+			<img loading="lazy" src="https://i.ytimg.com/vi/KG2SNBFy9_U/maxresdefault.jpg" height="720" width="1280" role="presentation" alt="Preview image for Dr. Keith Vertanen video" />
+			<button class="playhead" aria-hidden="true" tabindex="-1" aria-label="Watch Dr. Keith Vertanen">
+			<svg xmlns="http://www.w3.org/2000/svg" height="155" width="120" stroke="#000" fill="#fff" stroke-width="0" viewBox="0 -10 120 155" role="presentation">
+				<polygon points="25,0 100,40 25,80"></polygon>
+				<text x="10" y="140" fill="#000" stroke="none" style="font-size: 34px; font-family: 'Open Sans', Arial, sans-serif; font-weight:600;">Watch</text>
+			</svg>
+			</button>
+		</div></div></a>                                    <div class="movie-title">
+                                       <h2>Dr. Keith Vertanen</h2><button><span class="show-for-sr">Expand</span></button></div>
+                                    <div class="movie-description"></div>
+                                 </div>
+                                 
+                                 &nbsp;</div>
+                              <div class="item full-column">
+                                 
+                                 <div class="movie-wrapper preview"><!-- FROM CACHE resets at Tue, 20 May 2025 11:52:17-->
+<a class="various fancybox.iframe yt-embed" href="https://www.youtube.com/embed/hmD_AUD3ajs?autoplay=true&amp;rel=0&amp;showinfo=1&amp;enablejsapi=1&amp;origin=https://www.mtu.edu" rel="noopener" target="_blank"><div class="yt-iframe" id="yt-hmD_AUD3ajs" data-yt="hmD_AUD3ajs"><div class="movie new-movie yt-iframe" style="width: px;height:auto;">
+			<div class="show-for-sr">Watch Dr. Scott Kuhl video</div>
+			<img loading="lazy" src="https://i.ytimg.com/vi/hmD_AUD3ajs/maxresdefault.jpg" height="720" width="1280" role="presentation" alt="Preview image for Dr. Scott Kuhl video" />
+			<button class="playhead" aria-hidden="true" tabindex="-1" aria-label="Watch Dr. Scott Kuhl">
+			<svg xmlns="http://www.w3.org/2000/svg" height="155" width="120" stroke="#000" fill="#fff" stroke-width="0" viewBox="0 -10 120 155" role="presentation">
+				<polygon points="25,0 100,40 25,80"></polygon>
+				<text x="10" y="140" fill="#000" stroke="none" style="font-size: 34px; font-family: 'Open Sans', Arial, sans-serif; font-weight:600;">Watch</text>
+			</svg>
+			</button>
+		</div></div></a>                                    <div class="movie-title">
+                                       <h2>Dr. Scott Kuhl</h2><button><span class="show-for-sr">Expand</span></button></div>
+                                    <div class="movie-description"></div>
+                                 </div>
+                                 
+                                 &nbsp;</div>
+                           </div>
+                        </div>
+                        
+                        </article>
+                  </div>
+                  <div class="clearer"></div>
+               </div>
+               </section>
+         </div>
+         <div class="push"></div>
+      </div>
+      <footer xmlns:xlink="http://www.w3.org/1999/xlink" id="mtu-footer" class="mtu-footer">
+   <div class="footer__pre-nav-wrapper">
+      <ul class="no-bullet footer__pre-nav row">
+         <li class="footer-button"><a aria-label="Request Information from Michigan Tech" href="/request/index.html">Request Information</a></li>
+         <li class="footer-button"><a aria-label="Schedule a Visit at Michigan Tech" href="/visit/index.html">Schedule a Visit</a></li>
+         <li class="footer-button-give"><a aria-label="Give to Michigan Tech" href="/giving/index.html">Give</a></li>
+         <li class="footer-button-apply"><a aria-label="Apply to Michigan Tech" href="/apply/index.html">Apply</a></li>
+      </ul>
+   </div>
+   <div class="footer row">
+      <div class="footer-menu">
+         <h2 class="footer-menu__title">Admissions</h2>
+         <ul class="no-bullet">
+            <li><a href="/admissions/index.html">Undergraduate Admissions</a></li>
+            <li><a href="/gradschool/index.html">Graduate Admissions</a></li>
+            <li><a href="/globalcampus/index.html">Global Campus</a></li>
+            <li><a aria-label="Request Information from Michigan Tech" href="/request/index.html" class="footer-rfi">Request Information</a></li>
+            <li><a aria-label="Schedule a Visit to Michigan Tech" href="/visit/index.html" class="footer-visit">Schedule a Visit</a></li>
+            <li><a aria-label="Apply to Michigan Tech" href="/apply/index.html" class="footer-apply">Apply</a></li>
+            <li><a aria-label="Virtual Tours of Michigan Tech" href="/virtual-tours/index.html">Virtual Tours</a></li>
+         </ul>
+      </div>
+      <div class="footer-menu">
+         <h2 class="footer-menu__title">Study and Live</h2>
+         <ul class="no-bullet">
+            <li><a href="/majors/index.html">Degrees / Majors</a></li>
+            <li><a href="/colleges-schools/index.html">Colleges and Departments</a></li>
+            <li><a href="/library/index.html">Library</a></li>
+            <li><a href="https://events.mtu.edu/">Events Calendar</a></li>
+            <li><a href="/arts/index.html">Arts and Entertainment</a></li>
+            <li><a href="/recreation/index.html">Fitness and Recreation</a></li>
+            <li><a href="/tour/index.html">Campus and Beyond</a></li>
+         </ul>
+      </div>
+      <div class="footer-menu">
+         <h2 class="footer-menu__title">Campus Info</h2>
+         <ul class="no-bullet">
+            <li><a href="/about/index.html">About Michigan Tech</a></li>
+            <li><a href="/provost/accreditation/index.html" aria-label="University Accreditation">Accreditation</a></li>
+            <li><a href="https://www.michigantechhuskies.com/">Athletics</a></li>
+            <li><a href="https://map.mtu.edu/">Campus Map</a></li>
+            <li><a href="/jobs/index.html">Jobs at Michigan Tech</a></li>
+            <li><a href="/news/index.html">News</a></li>
+            <li><a href="/webcams/index.html">Webcams</a></li>
+         </ul>
+      </div>
+      <div class="footer-menu">
+         <h2 class="footer-menu__title">Policies and Safety</h2>
+         <ul class="no-bullet">
+            <li><a href="/title-ix/resources/campus-safety/index.html" aria-label="Campus Safety Information and Resources">Campus Safety Information</a></li>
+            <li><a href="/emergencycontacts/index.html">Emergency Contact Information</a></li>
+            <li><a href="/deanofstudents/concern/index.html">Report a Concern</a></li>
+            <li><a href="/publicsafety/index.html">Public Safety / Police Services</a></li>
+            <li><a href="/student-affairs/interests/student-disclosure/index.html">Student Disclosures</a></li>
+            <li><a href="/title-ix/index.html">Title IX</a></li>
+            <li><a href="/policy/policies/index.html">University Policies</a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="row footer__contact">
+      <div class="footer__contact-info"><script type="text/javascript">
+				(function () {
+					let givingHostnames = ["www.mtu.edu", "give.mtu.edu"];
+					let givingHref = "\/cs\/giving\/index.html";
+					let givingBtn = document.querySelector(".footer-button-give a");
+					if (givingBtn === null) {
+						return;
+					}
+
+					let givingUrl = new URL(givingHref, "https://www.mtu.edu/");
+
+					if (Array.from(givingHostnames).includes(givingUrl.hostname)) {
+						givingBtn.href = givingUrl.toString();
+					}
+				})();
+			</script><style>
+				.footer__pre-nav li:nth-of-type(1), .footer__pre-nav li:nth-of-type(2), .footer__pre-nav li:nth-of-type(3), .footer__pre-nav li:nth-of-type(4) {
+					display: block;
+				}
+			</style><h2><a class="text-gold underline-on-hover" href="/cs/">Computer Science</a></h2><div class="footer__contact-info-address">Rekhi Hall<br />1400 Townsend Drive<br />Houghton, MI 49931 </div><div><ul class="bar-separator no-bullet"><li class="phone"><a href="tel:9064871833">906-487-1833</a></li><li class="fax"><a href="tel:9064872283">906-487-2283</a></li><li class="email"><a href="mailto:csdept@mtu.edu">csdept@mtu.edu</a></li></ul></div><a class="text-gold" href="/cs/department/contact/">Contact Us</a><ul class="social-icons no-bullet"><li><a class="facebook" href="https://www.facebook.com/MichiganTechComputing" target="_blank">Facebook</a></li><li><a class="twitter" href="https://twitter.com/mtu_computing" target="_blank">Twitter</a></li><li><a class="linkedin" href="https://www.linkedin.com/company/michigan-tech-college-of-computing" target="_blank">Linkedin</a></li><li><a class="instagram" href="https://www.instagram.com/mtu_computing" target="_blank">Instagram</a></li><li><a class="youtube" href="https://www.youtube.com/channel/UCh0wg4-G3h-SEgFJnGVBEEw/" target="_blank">Youtube</a></li></ul></div>
+      <div class="footer__contact-social">
+         <div class="mtu-logo logo"><a href="/" class="mtu-logo mtu-logo-footer"><img src="//www.mtu.edu/mtu_resources/images/logos/michigan-tech-logo-fullname-solid-old.svg" height="132" width="200" alt="Michigan Technological University" loading="lazy"></a></div>
+      </div>
+   </div>
+   <div class="footer__post-info row">
+      <div>
+         <ul class="bar-separator no-bullet aside">
+            <li><a href="/accessibility/index.html">Accessibility</a></li>
+            <li><a href="/eo-compliance/equal-opportunity-hiring/index.html">Equal Opportunity</a></li>
+            <li><a href="mailto:webmaster@mtu.edu">Email the Webmaster</a></li>
+         </ul>
+      </div>
+      <div>
+         <ul class="bar-separator no-bullet">
+            <li><a href="/tomorrowneeds/index.html"><strong>Tomorrow Needs Michigan Tech</strong></a></li>
+            <li><span id="directedit">©</span>
+               2025 <a href="https://www.mtu.edu">Michigan Technological University</a></li>
+         </ul>
+      </div>
+   </div>
+</footer>
+
+<!--[if (!IE)|(gt IE 8)]><!--> 
+	<script src="//www.mtu.edu/mtu_resources/script/n/jquery.js"></script> 
+<!--<![endif]-->
+
+<!--[if lte IE 8]>
+	<script src="//www.mtu.edu/mtu_resources/script/n/jquery-ie.js"></script>
+<![endif]-->
+
+<script src="//www.mtu.edu/mtu_resources/assets/js/app.js"></script>
+<script>
+            var OUC = OUC || {};
+            OUC.globalProps = OUC.globalProps || {};
+            OUC.props = OUC.props || {};
+            
+            
+                OUC.globalProps['path'] = "/cs/graduate/computer-science/index.html";
+                OUC.globalProps['domain'] = "https://www.mtu.edu";
+                OUC.globalProps['index-file'] = "index";
+                OUC.globalProps['extension'] = "html";
+            
+            var key;
+            for (key in OUC.globalProps) {
+            OUC.props[key] = OUC.globalProps[key];
+            }
+        </script>
+      <script>
+	$(function(){
+		var $domain      = OUC.globalProps['domain'];
+		var $currentPage = OUC.globalProps['path'];
+		var $extension   = OUC.globalProps['extension'];
+		var $indexFile   = OUC.globalProps['index-file'];
+		
+		$currentPage = $domain + $currentPage.replace(/index\.\w+/i, '');
+		
+		
+		$('.leftnav .sublinks ul li').each(function(index, anchorTag){
+
+			$link =  $("> a", this).attr('href');
+			$link = $domain+$link.replace(/index\.\w+/i, '');
+			var $count1 = ($link.match(/\//g) || []).length;
+			
+			// check if link matches current page
+			/*if ($currentPage.includes($link) && $count1 > 4)
+			{
+				$(this).addClass('active');
+				// break out of the loop
+				return false;
+			}*/
+		});
+
+		$('.category-nav-bar > li.main-nav-item').each(function(index, anchorTag){
+
+			$link =  $("a", this).attr('href');
+			if($link) {
+				$link = $domain+$link.replace(/index\.\w+/i, '');
+			}
+			// check if link matches current page
+			if ($currentPage.includes($link))
+			{
+				$(this).addClass('in');
+				// break out of the loop
+				return false;
+			}
+		});
+	});
+</script>
+<div id="hidden" style="display:none;"><a id="de" href="https://a.cms.omniupdate.com/11/?skin=oucampus&amp;account=MTU&amp;site=www&amp;action=de&amp;path=/cs/graduate/computer-science/index.pcf">©</a></div>
+   </body>
+</html>

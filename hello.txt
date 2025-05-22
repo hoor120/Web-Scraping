@@ -1,0 +1,992 @@
+
+
+
+
+Computer Science MS, PhD Programs | Michigan Technological University
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to page content
+Skip to footer navigation
+
+
+
+
+
+
+Menu
+
+
+
+
+
+
+
+
+
+
+
+                                    Students
+                                
+
+
+                                    Faculty/Staff
+                                
+
+
+                                    Alumni
+                                
+
+
+                                    Parents
+                                
+
+
+                                    Industry
+                                
+
+
+
+                                Tech Links
+                            
+
+
+
+
+            A to Z
+        
+
+
+
+            Campus Directory
+        
+
+
+
+            Canvas
+        
+
+
+
+            Email
+        
+
+
+
+            Experience
+        
+
+
+
+            Safety Data Sheets
+        
+
+
+
+			Website Settings
+		
+
+
+
+
+
+
+
+
+
+
+
+					Search
+				
+
+
+				Clear Search Input
+			
+
+				Search Category
+			
+
+
+					Michigan Tech
+				
+
+					This Site
+				
+
+					Programs
+				
+
+
+				Go
+			
+
+
+			Open Search
+		
+
+
+
+
+
+
+Undergraduate
+Computer Science BS
+Cybersecurity BS
+Data Science BS
+Software Engineering BS
+General Computing Program
+Computing Minors
+Accreditation
+Advising
+Research Scholarship
+Enterprise
+Student Orgs
+Learning Center
+
+Graduate
+Applied Computer Science MS
+Computer Science MS, PhD
+Computational Science & Engineering PhD
+Cybersecurity MS
+Data Science MS
+Accelerated Master's
+Foundations of Cybersecurity Certificate
+Program Directors
+CS Department Courses
+Graduate Awards
+Theses and Dissertations
+FAQs
+Admission Timeline
+Research Positions
+
+Research
+Active Projects
+Publications
+Artificial Intelligence and Machine Learning
+Architecture
+Education, Society, and Profession
+Programming Languages and Software Engineering
+Security and Privacy
+Systems and Networking
+Institute of Computing and Cybersystems
+
+Facilities
+Department
+About
+50th Anniversary
+Annual Highlights
+Faculty Directory
+Department Staff
+External Advisory Board
+Alumni
+Student Awards
+Faculty Awards
+Employment
+Contact Us
+
+Giving Opportunities
+Apply Now
+ 
+
+
+
+
+
+			Search
+		
+
+
+			Clear Search Input
+		
+
+			Search Category
+		
+
+
+				Michigan Tech
+			
+
+				This Site
+			
+
+				Programs
+			
+
+
+			Search
+		
+
+
+
+Undergraduate
+Computer Science BS
+Cybersecurity BS
+Data Science BS
+Software Engineering BS
+General Computing Program
+Computing Minors
+Accreditation
+Advising
+Research Scholarship
+Enterprise
+Student Orgs
+Learning Center
+
+Graduate
+Applied Computer Science MS
+Computer Science MS, PhD
+Computational Science & Engineering PhD
+Cybersecurity MS
+Data Science MS
+Accelerated Master's
+Foundations of Cybersecurity Certificate
+Program Directors
+CS Department Courses
+Graduate Awards
+Theses and Dissertations
+FAQs
+Admission Timeline
+Research Positions
+
+Research
+Active Projects
+Publications
+Artificial Intelligence and Machine Learning
+Architecture
+Education, Society, and Profession
+Programming Languages and Software Engineering
+Security and Privacy
+Systems and Networking
+Institute of Computing and Cybersystems
+
+Facilities
+Department
+About
+50th Anniversary
+Annual Highlights
+Faculty Directory
+Department Staff
+External Advisory Board
+Alumni
+Student Awards
+Faculty Awards
+Employment
+Contact Us
+
+Giving Opportunities
+Apply Now
+
+
+
+                    Info For . . .
+                
+
+
+
+
+                                Students
+                            
+
+
+                                Faculty/Staff
+                            
+
+
+                                Alumni
+                            
+
+
+                                Parents
+                            
+
+
+                                Industry
+                            
+
+
+
+
+
+                    Tech Links
+                
+
+
+
+
+            A to Z
+        
+
+
+
+            Campus Directory
+        
+
+
+
+            Canvas
+        
+
+
+
+            Email
+        
+
+
+
+            Experience
+        
+
+
+
+            Safety Data Sheets
+        
+
+
+
+			Website Settings
+		
+
+
+
+
+
+ 
+
+
+Computer Science
+
+
+Michigan Tech
+Computing
+Computer Science
+Graduate
+Computer Science MS, PhD
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Also in this section
+
+
+Graduate
+Applied Computer Science MSComputer Science MS, PhDGraduate HandbookDegree PlansMS AdvisingPhD AdvisingGraduate DirectoryAccelerated MSGraduate AwardsComputational Science & Engineering PhDCybersecurity MSData Science MSAccelerated Master'sFoundations of Cybersecurity CertificateProgram DirectorsCS Department CoursesGraduate AwardsTheses and DissertationsFAQsAdmission TimelineResearch Positions
+
+
+
+
+
+Computer Science—MS, PhD
+
+
+Prepare for an Advanced Career in Computer Science
+Graduate programs in the Michigan Tech Department of Computer Science pave the way
+                           to exciting, well-compensated career opportunities. You'll be well-prepared through
+                           Michigan Tech's high-quality educational experience, which blends fundamentals, cutting-edge
+                           technologies, and innovative research.
+Computer Science faculty and students apply computational approaches to solve significant
+                           hardware, software, and data problems across a wide range of disciplines. Students
+                           have many rich opportunities to conduct leading-edge research in a friendly, collegial
+                           atmosphere. You will find us working on research in artificial intelligence, machine learning, data science, big data, internet of things, biometrics, computer
+                           and network security, human-computer interaction, and more.
+Our students and graduates are in high demand by state, national, and international
+                           companies. And our alumni are active throughout the nation and worldwide, developing
+                           innovative technologies and solving hard multidisciplinary problems. 
+Are you ready for the future? We are. Join us!
+What Sets Us Apart
+
+Four faculty members and an alumnus have received prestigious NSF CAREER Awards.
+Alumni hold faculty positions at the Missouri University of Science and Technology,
+                              University of Houston, and University of Rochester, among others.
+Our graduates are employed in a range of industries, including Amazon, AMD, Ford,
+                              Google, Microsoft, Netflix, Intel, Qualcomm, Raytheon, Texas Instruments, and more.
+Graduate students have received the NSF Graduate Research Fellowship Award, the King-Chavez-Parks
+                              Future Faculty Fellowship, the Google Anita Borg Scholarship, and a NASA-Harriet G.
+                              Jenkins Predoctoral Fellowship Award
+Research projects in compilers, computer architecture, computer science education,
+                              and parallel computing have each received funding of over $1 million.
+Special-Purpose Research and Learning Labs
+                              
+                              
+Artificial intelligence/robotics lab
+Cluster computing lab
+Compiler/architecture lab
+Graphics and Visualization lab
+Human-computer interaction lab
+Virtual Reality Lab
+Operating Systems/Security and Privacy
+
+
+
+MS Degree Plans
+
+
+
+MS, Computer Science: Thesis Option
+
+
+
+This option requires a research thesis prepared under the supervision of the advisor.
+                                       The thesis describes a research investigation and its results. The scope of the research
+                                       topic for the thesis should be defined in such a way that a full-time student could
+                                       complete the requirements for a master’s degree in 12 months or three semesters following
+                                       the completion of coursework by regularly scheduling graduate research credits.
+The minimum requirements are as follows:
+
+Total Credit Requirements
+
+
+Option Parts
+Credits
+
+
+Coursework (minimum)
+20 Credits
+
+
+Thesis research
+6-10 Credits
+
+
+Total (minimum)
+30 Credits
+
+
+
+
+Distribution of Coursework Credit
+
+
+Distribution
+Credits
+
+
+5000-6000 series (minimum)
+12 Credits
+
+
+3000-4000 (maximum)
+12 Credits
+
+
+
+Programs may have stricter requirements and may require more than the minimum number
+                                       of credits listed here.
+The CS Department allows up to 6 of the 30 hours of credit required for graduation
+                                       to be in CS5990. In addition to completing the 30 hours of credit in approved courses
+                                       (including CS5990 and up to 3 hours of CS5999 credit though not more than 9 total
+                                       hours may be taken in CS5990 and CS5999), a student following the thesis option is
+                                       expected to:
+
+Prepare a written plan describing the thesis research.
+Defend the research plan in an oral seminar presentation or meet with the advisory
+                                          committee to discuss the research plan.
+Prepare a final thesis.
+Defend the thesis in an oral seminar presentation.
+Learn more about the Thesis Option
+
+
+
+
+
+
+MS, Computer Science: Project Option
+
+
+
+This option requires a report describing the results of an independent study project.
+                                       The scope of the research topic should be defined in such a way that a full-time student
+                                       could complete the requirements for a master’s degree in twelve months or three semesters
+                                       following the completion of coursework by regularly scheduling graduate research credits. 
+Of the minimum total of 30 credits, at least 24 must be earned in coursework other
+                                       than the project:
+
+Total Credit Requirements
+
+
+Option Parts
+Credits
+
+
+Coursework (minimum)
+24 Credits
+
+
+Report
+2-6 Credits
+
+
+Total (minimum)
+30 Credits
+
+
+
+
+Distribution of Coursework Credit
+
+
+Distribution
+Credits
+
+
+5000-6000 series (minimum)
+12 Credits
+
+
+3000-4000 (maximum)
+12 Credits
+
+
+
+Programs may have stricter requirements and may require more than the minimum number
+                                       of credits listed here.
+The project option allows up to 6 of the 30 hours of credit required for graduation
+                                       to be in CS5990. In addition to completing the 30 hours of credit in approved courses
+                                       (including CS5990 and up to 3 hours of CS5999 credit), a student following the project
+                                       option is expected to: present written and oral project reports at the conclusion
+                                       of the project. Thus, the student should:
+
+Prepare a written project plan that describes any background work necessary for completion
+                                          of the project.
+Present the project plan to the advisory committee.
+Prepare a final report at the conclusion of the project.
+Defend the project report in a public oral seminar presentation.
+Learn more about the Project Option.
+
+
+
+
+
+
+MS, Computer Science: Coursework Option
+
+
+
+This option requires a minimum of 30 credits be earned through coursework. A limited
+                                       number of research credits may be used with the approval of the advisor, department,
+                                       and Graduate School. See degree requirements for more information.
+A graduate program may require an oral or written examination before conferring the
+                                       degree and may require more than the minimum credits listed here:
+
+Distribution of Coursework Credit
+
+
+Distribution
+Credits
+
+
+5000-6000 series (minimum)
+18 Credits
+
+
+3000-4000 (maximum)
+12 Credits
+
+
+
+
+The coursework option requires 30 hours of graded course work.
+None of the 30 hours of credit required for graduation may be in CS5990 and no more than 3 hours of CS5999 credit may be applied to the 30-hour requirement.
+Course work option students have the graduate director as their advisor.
+Learn more about the Coursework Option.
+
+
+
+
+
+
+Accelerated Master's, Computer Science
+
+
+
+
+
+Undergraduate students can complete both their bachelor's and master's degrees on
+                                             an accelerated timeline.
+
+
+
+
+
+
+PhD Degree Plan
+
+
+
+PhD Requirements: Computer Science
+
+
+
+To complete a doctoral degree, students must complete the following milestones:
+
+Complete all coursework and research credits (see credit requirements below)
+Pass Qualifying Examination
+Pass Research Proposal Examination
+Prepare and Submit Approved Dissertation
+Pass Final Oral Defense
+
+The minimum credit requirements are as follows:
+
+Total Credit Requirements
+
+
+Degrees
+Credits
+
+
+MS-PhD (minimum)
+30 Credits
+
+
+BS-PhD (minimum)
+60 Credits
+
+
+
+Individual programs may have higher standards and students are expected to know their
+                                       program's requirements. See the Doctor of Philosophy Requirements website for more information about PhD milestones and related timelines.
+
+
+
+
+The PhD student must complete:
+
+An approved MS program in computer science,
+A PhD credit requirement, and
+A graduate-level breadth requirement.
+Learn more about PhD degree plans.
+
+Funding Opportunities
+Many University-related and external funding options are available to graduate students.
+                           Accepted PhD students are automatically considered for Graduate Teaching Assistantships.
+                           Check out available CS department Graduate Research positions. In addition, find an extensive list of resources to aid students in finding additional funding on the Michigan Tech Graduate School website.
+
+
+
+
+
+I chose MTU for my graduate degree because of the great relationships I made with
+                                       the professors in my undergrad. People actually care about you at MTU and you are
+                                       not just a number. The welcoming environment at Computing[MTU] brings with it opportunities
+                                       and a bright future.
+
+
+Elijah CobbPhD Student, Computer Science
+
+
+
+
+
+
+
+
+Grad School Calendar
+
+
+
+
+
+
+
+Request Master’s Info
+Request PhD Info
+How to Apply
+
+
+
+
+
+
+
+
+
+
+Request Master’s Info
+Request PhD Info
+How to Apply
+
+
+
+
+
+
+
+What is Computer Science?
+Computer Salaries Comparison
+
+
+
+
+
+Contact
+
+
+
+Graduate Program Director:
+
+
+
+Jean Mayo
+
+
+Graduate Program Assistant:
+
+
+
+Janna Chittick
+
+
+
+
+
+
+Admissions Requirements
+
+
+Applications are reviewed on an individual basis using a holistic approach.
+Graduate School
+
+Application Requirements
+Admissions Types
+Graduate Application
+Student Statements
+Official Transcripts
+
+Program Specific
+
+2 Letters of Recommendation 
+Admitted applicants typically have an undergraduate overall GPA of 3.0 or greater
+                                    on a 4.0 scale
+GRE (for International Students only, waived for PhD if undergraduate degree is from a U.S. institution)
+4-year Bachelor's degree required - Must have a degree in Computer Science or a similar
+                                    field. Students with degrees in other fields may be required to take preparatory courses.
+
+International Students
+
+TOEFL: Recommended Score of at least 90 iBT
+IELTS: Recommended Score of 6.5 overall
+
+Michigan Tech requires a minimum 79 overall TOEFL or 6.5 overall IELTS score.
+Admissions Decisions
+Made beginning on January 1 (for Fall) and October 1 (for Spring)
+Recommended Deadlines
+Fall Semester: April 1
+Spring Semester: August 1
+Summer: Please contact the Graduate Program Director 
+For full financial consideration for Fall: February 1
+
+
+
+
+
+
+
+
+
+
+
+Meet Your Faculty 
+
+
+
+
+
+
+Watch Dr. Laura Brown video
+
+
+
+
+Watch
+
+
+ 
+Dr. Laura BrownExpand
+
+
+                                 
+                                  
+
+
+
+Watch Dr. Keith Vertanen video
+
+
+
+
+Watch
+
+
+ 
+Dr. Keith VertanenExpand
+
+
+                                 
+                                  
+
+
+
+Watch Dr. Scott Kuhl video
+
+
+
+
+Watch
+
+
+ 
+Dr. Scott KuhlExpand
+
+
+                                 
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+Request Information
+Schedule a Visit
+Give
+Apply
+
+
+
+
+Admissions
+
+Undergraduate Admissions
+Graduate Admissions
+Global Campus
+Request Information
+Schedule a Visit
+Apply
+Virtual Tours
+
+
+
+Study and Live
+
+Degrees / Majors
+Colleges and Departments
+Library
+Events Calendar
+Arts and Entertainment
+Fitness and Recreation
+Campus and Beyond
+
+
+
+Campus Info
+
+About Michigan Tech
+Accreditation
+Athletics
+Campus Map
+Jobs at Michigan Tech
+News
+Webcams
+
+
+
+Policies and Safety
+
+Campus Safety Information
+Emergency Contact Information
+Report a Concern
+Public Safety / Police Services
+Student Disclosures
+Title IX
+University Policies
+
+
+
+
+Computer ScienceRekhi Hall1400 Townsend DriveHoughton, MI 49931 906-487-1833906-487-2283csdept@mtu.eduContact UsFacebookTwitterLinkedinInstagramYoutube
+
+
+
+
+
+
+
+Accessibility
+Equal Opportunity
+Email the Webmaster
+
+
+
+
+Tomorrow Needs Michigan Tech
+©
+               2025 Michigan Technological University
+
+
+
+
+
+
+
+
+
+
+
+©
+
